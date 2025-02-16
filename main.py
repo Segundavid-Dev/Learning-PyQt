@@ -17,21 +17,23 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Awesome App")
-        self.label = QLabel()
-        self.input = QLineEdit()
-        self.input.textChanged.connect(self.label.setText)
 
-        layout = QVBoxLayout()
-        layout.addWidget(self.input)
-        layout.addWidget(self.label)
+        self.label = QLabel("Click in this window")
+        self.setCentralWidget(self.label)
 
-        container = QWidget()
-        container.setLayout(layout)
-
-        # set central widget of the window
-        self.setCentralWidget(container)
+    def mouseMoveEvent(self, e):
+        self.label.setText("mouseMoveEvent")
         
+    def mousePressEvent(self, e):
+        self.label.setText("mousePressEvent")
+    
+    def mouseReleaseEvent(self, e):
+        self.label.setText("mouseReleaseEvent")
+    
+    def mouseDoubleClickEvent(self, e):
+        self.label.setText("mouseDoubleClickEvent")
     # signals and slots
+    # events
 
 
 
