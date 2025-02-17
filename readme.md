@@ -17,3 +17,13 @@
 - Add toolbars & Menu with keyboard shortcur using QAction
 - Popup dialog to get confirmation, or select file
 - Build multi window Application
+
+
+## Basics
+- Create a PyQt5 App
+- PyQt5 Signal
+- PyQt5 widgets
+- PyQt5 Layout
+- PyQt5 Menu
+- PyQt5 Dialogs
+- Multi window PyQt5
